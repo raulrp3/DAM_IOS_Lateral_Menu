@@ -13,6 +13,7 @@
 		C18EB67123C77A84007AB25B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C18EB66F23C77A84007AB25B /* Main.storyboard */; };
 		C18EB67323C77A85007AB25B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C18EB67223C77A85007AB25B /* Assets.xcassets */; };
 		C18EB67623C77A85007AB25B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C18EB67423C77A85007AB25B /* LaunchScreen.storyboard */; };
+		C18EB68023C77AE9007AB25B /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C18EB67F23C77AE9007AB25B /* SWRevealViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		C18EB67223C77A85007AB25B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C18EB67523C77A85007AB25B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C18EB67723C77A85007AB25B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C18EB67D23C77AE8007AB25B /* DAM_IOS_Lateral_Menu-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DAM_IOS_Lateral_Menu-Bridging-Header.h"; sourceTree = "<group>"; };
+		C18EB67E23C77AE9007AB25B /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		C18EB67F23C77AE9007AB25B /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 		C18EB66823C77A84007AB25B /* DAM_IOS_Lateral_Menu */ = {
 			isa = PBXGroup;
 			children = (
+				C18EB67E23C77AE9007AB25B /* SWRevealViewController.h */,
+				C18EB67F23C77AE9007AB25B /* SWRevealViewController.m */,
 				C18EB66923C77A84007AB25B /* AppDelegate.swift */,
 				C18EB66B23C77A84007AB25B /* SceneDelegate.swift */,
 				C18EB66D23C77A84007AB25B /* ViewController.swift */,
@@ -63,6 +69,7 @@
 				C18EB67223C77A85007AB25B /* Assets.xcassets */,
 				C18EB67423C77A85007AB25B /* LaunchScreen.storyboard */,
 				C18EB67723C77A85007AB25B /* Info.plist */,
+				C18EB67D23C77AE8007AB25B /* DAM_IOS_Lateral_Menu-Bridging-Header.h */,
 			);
 			path = DAM_IOS_Lateral_Menu;
 			sourceTree = "<group>";
@@ -99,6 +106,7 @@
 				TargetAttributes = {
 					C18EB66523C77A83007AB25B = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 				};
 			};
@@ -141,6 +149,7 @@
 				C18EB66E23C77A84007AB25B /* ViewController.swift in Sources */,
 				C18EB66A23C77A84007AB25B /* AppDelegate.swift in Sources */,
 				C18EB66C23C77A84007AB25B /* SceneDelegate.swift in Sources */,
+				C18EB68023C77AE9007AB25B /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +293,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DAM_IOS_Lateral_Menu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -292,6 +302,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "escuela.estech.DAM-IOS-Lateral-Menu";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DAM_IOS_Lateral_Menu/DAM_IOS_Lateral_Menu-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -301,6 +313,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DAM_IOS_Lateral_Menu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -309,6 +322,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "escuela.estech.DAM-IOS-Lateral-Menu";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DAM_IOS_Lateral_Menu/DAM_IOS_Lateral_Menu-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
